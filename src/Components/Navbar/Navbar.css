@@ -1,0 +1,102 @@
+:root {
+    --balck-color: #222831;
+    --green-color: #059212;
+    --white-color: #d9edbf;
+}
+
+
+
+.navbar {
+    background-color: var(--balck-color);
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: var(--green-color);
+    transition: 0.2s;
+}
+
+.nav-link:focus,
+.nav-link:active,
+.dropdown .dropdown-toggle:active,
+.dropdown .dropdown-toggle:focus {
+    color: var(--white-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--green-color);
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width:992) {
+
+
+    .navbar-nav .nav-link:hover {
+        color: var(--green-color);
+        transform: scale(0);
+    }
+}
+
+.search-box {
+    position: relative;
+    width: 350px;
+
+}
+
+.search-box input {
+    width: 100%;
+    padding-right: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.search-box input:focus,
+.search-box input:active {
+    border: none;
+    box-shadow: none;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--green-color);
+    color: white;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.search-box button:hover,
+.search-box button:active {
+    background-color: #059212;
+}
+
+.navbar-toggler span {
+    color: #059212;
+}
+
+.dropdown-menu {
+    background-color: var(--balck-color);
+    border-radius: 10px;
+    box-shadow: rgba(182, 221, 190, 0.3) 0px 30px 60px -12px inset, rgba(5, 82, 21, 0.3) 0px 18px 36px -18px inset;
+}
+
+.dropdown-menu li a {
+    color: var(--green-color);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--balck-color);
+    color: var(--white-color);
+
+}
