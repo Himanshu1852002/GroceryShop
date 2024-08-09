@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(#108c1c, #060404);
+    background-position: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    height: 340px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.045);
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+h2 span {
+    color: orangered;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 150px;
+    border-bottom: 50%;
+    filter: drop-shadow(6px 47px 46px #000000);
+}
+
+.product-card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+}
+
+.product-card h5 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+
+.product-card .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+
+}
+
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.add-to-cart-btn:active {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #28a745;
+}
+
+@media (max-width:1400px) {
+    .product-card {
+        height: 330px;
+    }
+}
+
+@media (max-width:1200px) {
+    .product-card {
+        height: 300px;
+    }
+
+    .product-card img {
+
+        height: 130px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+}
+
+@media (max-width:992px) {
+    .add-to-cart-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .product-card {
+        height: 250px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+
+    .product-card img {
+        margin-top: 15px;
+        height: 80px;
+    }
+
+    .product-card h5 {
+        margin-top: 5px;
+        font-size: 1rem;
+
+    }
+
+    .product-card .price {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000;
+
+    }
+}
+
+@media (max-width:767px) {
+    .product-card {
+        height: 280px;
+    }
+
+    .product-card img {
+
+        height: 90px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+
+    .product-card h5 {
+        margin-top: 5px;
+        font-size: 1.5rem;
+
+    }
+
+    .product-card .price {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+
+    }
+}
+
+@media (max-width:575px) {
+    .product-card {
+        height: 290px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+}
+
+@media (max-width:465px) {
+    .product-card {
+        height: 270px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+}
+
+@media (max-width:435px) {
+    .product-card h5 {
+        /* margin-top: 15px; */
+        font-size: 0.9rem;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+
+    .product-card .price {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .product-card {
+        height: 250px;
+    }
+}
+
+@media (max-width:400px) {
+    .product-card {
+        height: 240px;
+    }
+
+    .product-card:hover {
+        transform: scale(1.045);
+    }
+}
+
+@media (max-width:365px) {
+    .add-to-cart-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 0.5rem;
+        height: 30px;
+        width: 100%;
+    }
+
+    .product-card {
+        height: 240px;
+    }
+
+    .product-card h5 {
+        font-size: 0.7rem;
+    }
+
+    .product-card .price {
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: #000;
+    }
+}

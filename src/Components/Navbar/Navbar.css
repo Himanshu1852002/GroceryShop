@@ -1,10 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --balck-color: #222831;
     --green-color: #059212;
     --white-color: #d9edbf;
 }
-
-
 
 .navbar {
     background-color: var(--balck-color);
@@ -33,11 +37,7 @@
     transform: scale(1.1);
 }
 
-
-
 @media (max-width:992) {
-
-
     .navbar-nav .nav-link:hover {
         color: var(--green-color);
         transform: scale(0);
@@ -46,12 +46,10 @@
 
 .search-box {
     position: relative;
-    width: 350px;
-
 }
 
 .search-box input {
-    width: 100%;
+
     padding-right: 50px;
     box-sizing: border-box;
     border-radius: 25px;
