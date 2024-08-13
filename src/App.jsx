@@ -8,6 +8,7 @@ import Hero_Banner from './Components/Hero_Banner/Hero_Banner';
 import Explore_Menu from './Components/Explore_Menu/Explore_Menu';
 import Featured_Product from './Components/Featured_Product/Featured_Product';
 import Offer_Banner from './Components/Offer_Banner/Offer_Banner';
+import Support_banner from './Components/Support_banner/Support_banner';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Explore_Menu />
       <Featured_Product />
       <Offer_Banner />
+      <Support_banner />
     </>
   )
 }
