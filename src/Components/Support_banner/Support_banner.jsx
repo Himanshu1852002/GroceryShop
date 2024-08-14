@@ -9,7 +9,7 @@ const Support_banner = () => {
     return (
         <div>
             <div className="card-box">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-6 cards">
                             <div className="card card-create">
