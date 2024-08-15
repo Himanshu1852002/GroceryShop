@@ -10,6 +10,7 @@ import Featured_Product from './Components/Featured_Product/Featured_Product';
 import Offer_Banner from './Components/Offer_Banner/Offer_Banner';
 import Support_banner from './Components/Support_banner/Support_banner';
 import Best_Seller from './Components/Best_Seller/Best_Seller';
+import Offers from './Components/Offers/Offers';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Featured_Product />
       <Offer_Banner />
       <Best_Seller />
+      <Offers/>
       <Support_banner />
     </>
   )
