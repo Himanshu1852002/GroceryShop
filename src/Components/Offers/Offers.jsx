@@ -1,11 +1,15 @@
 import React from "react";
-import './Offers.css'
+import './Offers.css';
+import Apple from '../Assets/Images/apple.png';
+import Mango from '../Assets/Images/Mango';
 function Offers(){
+    const image=[Apple,Mango];
     return(<>
   <div className="container-fluid">
-    <button className="btn btn-primary">
-             Start
-    </button>
+    <div className="container">
+       
+        
+    </div>
   </div>
 
     </>)
