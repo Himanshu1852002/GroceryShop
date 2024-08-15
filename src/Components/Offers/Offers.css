@@ -1,0 +1,64 @@
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: fixed;
+    transition: 0.2s ease;
+}
+
+.carousel-control-prev-icon:hover {
+    transform: scale(1.2);
+    background-color: chartreuse;
+    
+}
+
+.carousel-control-next-icon:hover {
+    transform: scale(1.2);
+    background-color: chartreuse;
+}
+
+.card {
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 10px; 
+    
+}
+
+.card:hover {
+transform: scale(1.02);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+button {
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.custom-width {
+    width: 200px;
+    height: 180px;
+}
+
+.container {
+    margin: 20px auto;
+    
+}
+
+.col-card {
+    margin: 20px;
+}
+.container-fluid{
+    margin: 20px auto;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#108c1c, #060404);
+    background-position: center;
+    padding-bottom: 25px;
+}
+.col{
+    
+}
