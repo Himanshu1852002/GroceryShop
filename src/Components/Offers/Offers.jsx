@@ -16,6 +16,7 @@ function Offers() {
         { FruitsName: "Grapes", url: Mango, Price: 70, Offers: 10, RealPrice: 78, badge: "Offer" },
         { FruitsName: "Orange", url: Lichi, Price: 50, Offers: 5, RealPrice: 52, badge: "Offer" },
         { FruitsName: "Pineapple", url: Tomato, Price: 85, Offers: 25, RealPrice: 113, badge: "Offer" },
+        
     ];
 
     // Function to chunk the data into arrays of a specific size
@@ -28,7 +29,7 @@ function Offers() {
     };
 
     // Chunk the data into arrays of 4 items each (for the carousel slides)
-    const slides = chunkData(data, 3);
+    const slides = chunkData(data, 4);
 
     return (
         <div className="container-fluid">
@@ -39,8 +40,8 @@ function Offers() {
                             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                                 <div className="row">
                                     {slide.map((item, idx) => (
-                                        <div className="col" key={idx}>
-                                            <div className="card" style={{ width: '20rem' }}>
+                                        <div className="col-lg-3 col-md-6 col-sm-6 cards" key={idx}>
+                                            <div className="card mycard" style={{ width: '20rem' }}>
                                                 <img src={item.url} className="card-img-top custom-width" alt={`${item.FruitsName} Image`} style={{ margin: 'auto' }} />
                                                 <span className="badge bg-warning text-dark position-absolute top-0 start-0 m-2 badge-offer">{item.badge}</span>
                                                 <span className="badge bg text-dark position-absolute top-0 end-0 m-2 badge-offer">
@@ -86,11 +87,11 @@ function Offers() {
                             </div>
                         ))}
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button className="carousel-control-prev" style={{width:'20px'}} type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
                     </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button className="carousel-control-next" style={{width:'20px'}} type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
                     </button>
