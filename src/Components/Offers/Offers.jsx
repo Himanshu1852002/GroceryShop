@@ -49,7 +49,8 @@ function Offers() {
                                                 </span>
                                                 <div className="card-body">
                                                     <div className="row">
-                                                        <h5>Offer : Diwali Sale | Up To {item.Offers}% Off</h5>
+                                                        
+                                                        <h5>{item.FruitsName} :- 1kg</h5>
                                                     </div>
                                                     <div className="row">
                                                         <div className="col">
