@@ -1,0 +1,67 @@
+.ccpi,
+.ccpin {
+    position: fixed;
+    transition: 0.2s ease;
+}
+
+.ccpi:hover {
+    transform: scale(1.2);
+    background-color: chartreuse;
+
+}
+
+.ccpin:hover {
+    transform: scale(1.2);
+    background-color: chartreuse;
+}
+
+.mycard {
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.mycard:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(6px 47px 46px #000000);
+}
+
+.coll-btn button {
+    transition: 0.2s ease;
+}
+
+.coll-btn button:hover {
+    transform: scale(1.1);
+
+}
+
+.custom-width {
+    width: 200px;
+    height: 180px;
+}
+
+
+
+.col-card {
+    margin: 20px;
+}
+
+.top-container {
+
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#108c1c, #060404);
+    background-position: center;
+    padding-bottom: 25px;
+}
+
+.top-container h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}

@@ -11,6 +11,8 @@ import Offer_Banner from './Components/Offer_Banner/Offer_Banner';
 import Support_banner from './Components/Support_banner/Support_banner';
 import Best_Seller from './Components/Best_Seller/Best_Seller';
 import Footer from './Components/Footer/Footer';
+import Offers from './Components/Offers/Offers';
+
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
       <Offer_Banner />
       <Best_Seller />
       <Support_banner />
+      <Offers />
       <Footer />
     </>
   )

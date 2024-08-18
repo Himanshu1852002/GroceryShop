@@ -10,94 +10,38 @@ import kinder_joy_image from '../Assets/Images/kinder-joy.png';
 import strowberry_image from '../Assets/Images/strowberry.png';
 import oil_image from '../Assets/Images/oil.png';
 
+const products = [
+    { imgSrc: annar_image, altText: "Annar", name: "Pomegranate - 1kg", price: "60rs" },
+    { imgSrc: simla_chilli_image, altText: "Simla Chilli", name: "Shimla-Chilli - 1kg", price: "40rs" },
+    { imgSrc: sprite_image, altText: "Sprite", name: "Sprite - 1Lt", price: "60rs" },
+    { imgSrc: pringles_image, altText: "Pringles", name: "Pringles - 1pc", price: "50rs" },
+    { imgSrc: orange_image, altText: "Orange", name: "Orange - 1kg", price: "90rs" },
+    { imgSrc: kinder_joy_image, altText: "Kinder Joy", name: "Kinder-Joy - 1pc", price: "40rs" },
+    { imgSrc: strowberry_image, altText: "Strawberry", name: "Strawberry - 1kg", price: "100rs" },
+    { imgSrc: oil_image, altText: "Oil", name: "Oil - 1kg", price: "120rs" },
+];
 
-const Best_Seller = () => {
+const BestSeller = () => {
     return (
-        <div>
-            <div className="sell-box">
-                <div className="container">
-                    <h2 className="text-center  mb-5">Best Selling <span>Products</span></h2>
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6 col-6">
+        <div className="sell-box">
+            <div className="container">
+                <h2 className="text-center mb-5">Best Selling <span>Products</span></h2>
+                <div className="row">
+                    {products.map((product, index) => (
+                        <div className="col-md-3 col-sm-6 col-6" key={index}>
                             <div className="best-seller-card">
                                 <span className="badge">Best 👍</span>
-                                <img src={annar_image} alt="Annar" />
-                                <h5>Pumegranate- 1kg</h5>
-                                <p className="price">60rs</p>
+                                <img src={product.imgSrc} alt={product.altText} />
+                                <h5>{product.name}</h5>
+                                <p className="price">{product.price}</p>
                                 <button className="add-to-cart-btn">Add to Cart</button>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={simla_chilli_image} alt="SimlaChilli" />
-                                <h5>Shimla-Chilli - 1kg</h5>
-                                <p className="price">40rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={sprite_image} alt="Sprite" />
-                                <h5>Sprite - 1Lt</h5>
-                                <p className="price">60rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={pringles_image} alt="Pringles" />
-                                <h5>Pringles - 1pc</h5>
-                                <p className="price">50rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={orange_image} alt="Oranges" />
-                                <h5>Orange - 1kg</h5>
-                                <p className="price">90rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={kinder_joy_image} alt="Kinder-joy" />
-                                <h5>Kinder-Joy - 1pc</h5>
-                                <p className="price">40rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={strowberry_image} alt="strowberry" />
-                                <h5>StrowBerry - 1kg</h5>
-                                <p className="price">100rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                        <div className="col-md-3 col-sm-6 col-6">
-                            <div className="best-seller-card">
-                                <span className="badge">Best 👍</span>
-                                <img src={oil_image} alt="Oil" />
-                                <h5>Oil - 1kg</h5>
-                                <p className="price">120rs</p>
-                                <button className="add-to-cart-btn">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
-
-    )
+    );
 }
 
-export default Best_Seller
+export default BestSeller;

@@ -10,6 +10,10 @@
     white-space: nowrap;
 }
 
+.explore-menu::-webkit-scrollbar {
+    display: none;
+}
+
 .explore-item {
     display: inline - block;
     text-align: center;
