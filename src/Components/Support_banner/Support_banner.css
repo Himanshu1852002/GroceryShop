@@ -1,7 +1,7 @@
  .card-box {
      height: 100%;
      width: 100%;
-     background-color: #E7FBE6;
+     background-color: #F5EDED;
  }
 
  .cards {
@@ -21,26 +21,11 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     background: url(../Assets/Images/back.png);
+     background-color: #222831;
      background-size: cover;
      position: relative;
      filter: drop-shadow(5px 12px 20px #000000);
      box-shadow: 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0px -2px 6px 0px rgba(10, 37, 64, 0.35);
- }
-
- .card-create::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.6);
-     border-radius: 25px;
- }
-
- .body-card {
-     z-index: 1;
  }
 
  .body-card h2 {
@@ -58,7 +43,6 @@
  .card-ico {
      font-size: 4rem;
      color: #EEEEEE;
-     z-index: 1;
  }
 
  @media (max-width:1200px) {

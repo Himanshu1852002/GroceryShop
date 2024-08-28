@@ -7,7 +7,7 @@
 .box {
     height: 100%;
     width: 100%;
-    background: radial-gradient(#108c1c, #060404);
+    background: #222831;
     background-position: center;
     padding-bottom: 25px;
 }
@@ -18,7 +18,7 @@
     text-align: center;
     height: 300px;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
     position: relative;
     transition: 0.2s;
     cursor: pointer;
@@ -72,7 +72,7 @@ h2 span {
 }
 
 .add-to-cart-btn {
-    background-color: #28a745;
+    background-color: #059212;
     color: white;
     border: none;
     padding: 10px 20px;

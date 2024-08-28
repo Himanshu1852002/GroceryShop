@@ -1,5 +1,5 @@
 .outer-container {
-    background-color: #000;
+    background-color: #222831;
     color: #fff;
     padding: 20px 0;
 }
@@ -59,7 +59,7 @@
 }
 
 .last {
-    background-color: green;
+    background-color: #F5EDED;
 }
 
 .last p {

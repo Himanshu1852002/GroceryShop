@@ -50,7 +50,7 @@ function Offers() {
                                                     <i className="fa fa-heart" style={{ fontSize: '24px' }} onClick={() => {/* handle like */ }}></i>
                                                 </span>
                                                 <div className="card-body">
-                                                    <div className="row">
+                                                    <div className="row name-title">
 
                                                         <h5>{item.FruitsName} :- 1kg</h5>
                                                     </div>
@@ -58,7 +58,7 @@ function Offers() {
                                                         <div className="col">
                                                             <h4 style={{ marginLeft: 0, padding: 0, display: 'inline' }}>₹{item.Price}</h4>
                                                             <p style={{ marginRight: 0, padding: 0, display: 'inline' }}>
-                                                                <del>₹{item.RealPrice}</del>
+                                                                <del className="price">₹{item.RealPrice}</del>
                                                             </p>
                                                         </div>
                                                         <div className="col">
@@ -75,11 +75,9 @@ function Offers() {
                                                         </div>
                                                     </div>
                                                     <div className="row" style={{ marginTop: '10px' }}>
-                                                        <div className="col coll-btn">
-                                                            <button className="btn btn-primary">Buy Now</button>
-                                                        </div>
-                                                        <div className="col coll-btn">
-                                                            <button className="btn btn-primary">Add To Cart</button>
+
+                                                        <div className="col">
+                                                            <button className="btn coll-btn-offer">Add To Cart</button>
                                                         </div>
                                                     </div>
                                                 </div>

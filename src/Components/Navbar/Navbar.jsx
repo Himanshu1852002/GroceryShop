@@ -8,7 +8,9 @@ import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
-const Navbar = () => {
+import PropTypes from 'prop-types'
+import { Link } from "react-router-dom";
+const Navbar = ({ setShowLogin }) => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg">
@@ -64,7 +66,7 @@ const Navbar = () => {
                                 <a className="nav-link" href="#"><FaShoppingCart /><span className="badge  bg-light text-dark">0</span></a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#"><FaUser /></a>
+                                <Link onClick={() => setShowLogin(true)} className="nav-link" href="#"><FaUser /></Link>
                             </li>
                         </ul>
                     </div>
@@ -76,5 +78,9 @@ const Navbar = () => {
 
     );
 };
+
+Navbar.propTypes = {
+    setShowLogin: PropTypes.func.isRequired,
+}
 
 export default Navbar

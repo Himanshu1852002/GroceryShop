@@ -18,21 +18,8 @@
     display: inline - block;
     text-align: center;
     /* background-color: #41cb44; */
-    background-image: url('../Assets/Images/menu.png');
+    background-color: #222831;
 
-}
-
-.explore-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1;
-    border-radius: 20px;
-    z-index: 1;
 }
 
 .explore-item {
@@ -45,7 +32,7 @@
     height: 80px;
     width: 170px;
     cursor: pointer;
-    z-index: 2;
+
 }
 
 .explore-item img {
@@ -54,7 +41,7 @@
     object-fit: cover;
     display: block;
     margin: 0 auto 0 auto;
-    z-index: 2;
+
 }
 
 .explore-item p {
@@ -63,7 +50,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
-    z-index: 2;
+
 }
 
 @media(max-width: 1140px) {
