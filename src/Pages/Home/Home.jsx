@@ -6,15 +6,16 @@ import Support_banner from '../../Components/Support_banner/Support_banner';
 import Best_Seller from '../../Components/Best_Seller/Best_Seller';
 import Offers from '../../Components/Offers/Offers';
 import Testimonial from '../../Components/Testimonial/Testimonial';
+import { useState } from "react";
 
 const Home = () => {
 
-
+    const [category, setCategory] = useState("All")
 
     return (
         <div>
             <Hero_Banner />
-            <ExploreMenu />
+            <ExploreMenu category={category} setCategory={setCategory} />
             <Featured_Product />
             <Offer_Banner />
             <Best_Seller />

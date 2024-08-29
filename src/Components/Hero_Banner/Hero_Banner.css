@@ -5,8 +5,14 @@
 }
 
 .banner {
-
     background-color: #F5EDED;
+}
+
+.banner hr {
+    height: 2px;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 .first-col {
@@ -60,10 +66,6 @@ active {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.second-col img {
-    filter: drop-shadow(48px 3px 41px #000);
 }
 
 @keyframes animate {

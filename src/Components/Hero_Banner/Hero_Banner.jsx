@@ -25,7 +25,9 @@ const Hero_Banner = () => {
                         />
                     </div>
                 </div>
+                <hr />
             </div>
+
         </>
     )
 }
